@@ -1,57 +1,154 @@
 <!DOCTYPE html>
 <html lang="nl">
-<head>
-    <meta name=author content="Emiel Verbeeck">
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/global.css">
-    <link rel="stylesheet" href="css/hobby.css">
-    <link rel="icon" href="icon/favicon.ico" type="image/gif" sizes="16x16"> 
-    <title>Hobbies</title>
-</head>
-<body>
-    <nav>
-        <ul class="nav">
-            <li><a href="index.html" class="nav">Home</a></li>
-            <li><a href="hobby.html" class="nav">Hobbies</a></li>
-            <li><a href="ervaring.html" class="nav">Ervaring</a></li>
-            <li><a href="cv.html" class="nav">CV</a></li>
-            <li><a href="contact.html" class="nav">Contact</a></li>
-        </ul> 
-    </nav>
-    <h1 class="introTitel">Mijn hobbies</h1>
-    <div class="wrapper">
-        <h2>Accordeon</h2>
-        <p>Zoals eerder vermeld, muziek is een van mijn grote passies. Ik ben accordeon beginnen spelen van zodra ik oud genoeg was in de muziekschool te Herentals. Een accordeon is een orkest in 1 instrument. Je kan heel veel volume maken, maar ook muisstil spelen. Ook vele genres kan je spelen op een accordeon, van zware, sombere klassieke muziek tot levendige muzetjes. Ik heb met mijn accordeon ook al meerdere keren op het podium gestaan. Dit waren altijd geweldige ervaringen, een moment om aan de rest van de wereld te laten zien wat jij kan, en waarvoor je zoveel geoefend hebt. Het is een gevoel dat je niet anders kan meemaken, en het is zeker aan te raden.</p>
-        <img src="picture/gaelle-marcel-MwMmOtj6z2c-unsplash.jpg" alt="Accordeon op een schap">
-    </div>
-    <div class="wrapper">
-        <h2>Piano</h2>
-        <p>Ook de piano is een belanrijke hobby voor mij. Het was mijn eerste instrument, en ik leerde het vooraleer ik zelfs nog maar noten kon lezen. Gelukkig had ik een fantastische leerkracht, en dankzij haar kan ik nog steeds stukken heel goed op gehoor spelen. Ik heb ook al vele genres op de piano gespeeld, van swing tot pop, tot grootste scores van bijvoorbeeld Hanz Zimmer.</p>
-        <img src="picture/ebuen-clemente-jr-H5Iw3Xz0vxM-unsplash.jpg" alt="Piano">
-    </div>
-    <div class="wrapper">
-    <h2>IT</h2>
-    <p>Computers zijn ook een interesse die ik van kleins af aan mee had. Er zijn meerdere dingen die ik interessant eraan vindt.</p>
-    <table>
-        <caption>Onder andere:</caption>
-        <tr>
-            <td>AI</td>
-            <td>Programmeren</td>
-            <td>Video game development</td>
-            <td>Geschiedenis</td>
-        </tr>
-    </table>
-    <h3>AI</h3>
-    <p>AI vindt ik zeer interessant omdat het de manier waarop we op het moment werken compleet kan veranderen. Het kan in de toekomst bepaalde jobs compleet vervangen en ons nieuwe inzichten geven in de data die bedrijven verzamelen. Er zijn natuurlijk ook risicos en een hoop ethische vragen hierrond, maar dat maakt het ook zo boeiend. Ik denk dat er in de toekomst zeer veel zal draaien op een AI gestuurde basis, en die toekomst zou ik graag zien.</p>
-    <h3>Programmeren</h3>
-    <p>Ook deze programmas schrijven wou ik altijd al doen. Toen ik jonger was schreef ik vaak al kleine scriptjes voor bepaalde zaken in een videospel te automatiseren. In het middelbaar besloot ik dan ook al een IT richting te doen, wat mij zeker lag. Hier leerde ik al een stuk programmeren, web designen en data modelleren. Ook heb ik hier belangrijke eigenschappen voor het programmeren geoefend, zoals probleemoplossend denken.</p>
-    <h3>Video game development</h3>
-    <p>Ik wilde als kind ook altijd al zelf een spel maken. Over de jaren heb ik dit al meerdere keren geprobeerd. Het starten altijd hetzelfde, ik had een idee voor een videospel. Ik keek naar een hoop tutorials online, vaak uren lang, en zetten alles klaar om er aan te beginnen. Nadat ik dan begonnen was, was het altijd direct duidelijk dat dit soort project veel te veel werk is voor maar een persoon, en sloot ik alles maar terug. Uiteindelijk is er nooit echt iets van gekomen, maar ik hoop dat ik in de toekomst toch ook kan meewerken aan de development van een spel.</p>
-    <h3>Geschiedenis</h3>
-    <p>Geschiedenis is in het algemeen een grote interesse van mij, maar zeker ook de geschiedenis van de computer vindt ik zeer interessant. Het is ook een zeer rijke geschiedenis met vele dingen om te weten te komen, met een zeker belang ook naar de toekomst. Ik vindt het ook zeer interessant hoe onze moderne computers nog steeds zoveel gelijk hebben met de eerste computers. Uiteindelijk doen ze bijna hetzelfden, nu gewoon vele malen snellerm efficienter en minder handmatig</p>
-    </div>
+    <head>
+        <meta name="author" content="Emiel Verbeeck" />
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="css/global.css" />
+        <link rel="stylesheet" href="bootstrap/css/bootstrap.css">
+        <link rel="icon" href="icon/favicon.ico" type="image/gif" sizes="16x16"
+            />
+        <title>Hobbies</title>
+    </head>
+    <body>
+        <!-- Navbar -->
+        <nav class="navbar navbar-dark navbar-expand-lg">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">Emiel Verbeeck</a>
+                <button class="navbar-toggler" type="button"
+                    data-bs-toggle="collapse" data-bs-target="#navbar"
+                    aria-controls="navbar" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
 
-</body>
-</html>
+                <div class="collapse navbar-collapse justify-content-center"
+                    id="navbar">
+                    <ul class="navbar-nav me-auto mb-2">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="hobby.html">Hobby</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="cv.html">CV</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contact.html">Contact</a>
+                        </li>
+                    </div>
+                </div>
+            </nav>
+            <!-- Jumbotron intro -->
+            <div class="jumbotron m-4 p-3">
+                <h1 class="display-4">Hobbies</h1>
+                <p class="lead">Ik heb altijd al vele hobbies gehad, en dat
+                    blijft nog steeds het geval</p>
+                <hr class="my-4">
+                <p>Hieronder een aantal voorbeelden</p>
+            </div>
+
+            <!-- Carousel -->
+
+
+            <div id="carousel" class="carousel slide m-4 mt-auto"
+                data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                    <button type="button"
+                        data-bs-target="#carousel"
+                        data-bs-slide-to="0" class="active" aria-current="true"
+                        aria-label="Slide 1"></button>
+                    <button type="button"
+                        data-bs-target="#carousel"
+                        data-bs-slide-to="1" aria-label="Slide 2"></button>
+                    <button type="button"
+                        data-bs-target="#carousel"
+                        data-bs-slide-to="2" aria-label="Slide 3"></button>
+                    <button type="button"
+                        data-bs-target="#carousel"
+                        data-bs-slide-to="3" aria-label="Slide 4"></button>
+                    <button type="button"
+                        data-bs-target="#carousel"
+                        data-bs-slide-to="4" aria-label="Slide 5"></button>
+                    <button type="button"
+                        data-bs-target="#carousel"
+                        data-bs-slide-to="5" aria-label="Slide 6"></button>
+                </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img
+                            src="/images/ebuen-clemente-jr-H5Iw3Xz0vxM-unsplash.jpg"
+                            class="d-block w-100" alt="Piano">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>Piano</h5>
+                            <p>Ik speel al 13 jaar piano</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img
+                            src="/images/gaelle-marcel-MwMmOtj6z2c-unsplash.jpg"
+                            class="d-block w-100" alt="...">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>Accordeon</h5>
+                            <p>Ik speel al 9 jaar accordeon in een
+                                muziekacademie</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img
+                            src="/images/marius-masalar-rPOmLGwai2w-unsplash.jpg"
+                            class="d-block w-100" alt="blad met notenbalken">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>Muziek compositie</h5>
+                            <p>Ik maak zelf ook composities voor muziekstukken
+                                die ik mooi vindt</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img
+                            src="/images/florian-olivo-Mf23RF8xArY-unsplash.jpg"
+                            class="d-block w-100" alt="persoon aan het gamen">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>Gaming</h5>
+                            <p>Ik speel graag videospellen met mijn vrienden
+                                wanneer ik tijd heb</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="/images/peter-stumpf-yk9VXp4W5-Q-unsplash.jpg"
+                            class="d-block w-100" alt="Video editing">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>Video editing</h5>
+                            <p>In mijn vrije tijd heb ik mezelf leren video
+                                editen, wat ik nu ook nog doe als hobby</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="/images/aaron-burden-y02jEX_B0O0-unsplash.jpg"
+                            class="d-block w-100" alt="blad en pen">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>Schrijven</h5>
+                            <p>Ik schrijf graag fanfiction over mijn favorite
+                                series</p>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button"
+                    data-bs-target="#carousel"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button"
+                    data-bs-target="#carousel"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+
+            <script src="bootstrap/js/bootstrap.bundle.js"></script>
+        </body>
+    </html>
