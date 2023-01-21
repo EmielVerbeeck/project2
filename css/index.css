@@ -1,28 +1,9 @@
 body{
-    background-image: url(../picture/mink-mingle-g0Qdolm3K14-unsplash.jpg);
+    background-image: url(../images/mink-mingle-g0Qdolm3K14-unsplash.jpg);
 }
 *{
     color: black;
     
 }
-h1.introTitel, .wrapper, p.intro, .leesMeer{
-    display:block;
-    background-color: rgb(89, 182, 253);
-    border-style: solid;
-    border-color:black;
-    border-radius: 1rem;
-    padding: 1rem;
-    margin: 6px;
-}
-.wrapper{
-    width: auto;
-    overflow: hidden;
-}
-.intro, div a{
-    font-size:large;
-}
-.pSide{
-    font-size: larger;
-    padding: 0;
-}
+
 

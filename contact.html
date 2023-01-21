@@ -1,49 +1,94 @@
 <!DOCTYPE html>
 <html lang="nl">
-<head>
-    <meta name=author content="Emiel Verbeeck">
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/contact.css">
-    <link rel="stylesheet" href="css/global.css">
-    <link rel="icon" href="icon/favicon.ico" type="image/gif" sizes="16x16"> 
-    <title>Contact</title>
-</head>
-<body>
-    <nav>
-        <ul class="nav">
-            <li><a href="index.html" class="nav">Home</a></li>
-            <li><a href="hobby.html" class="nav">Hobbies</a></li>
-            <li><a href="ervaring.html" class="nav">Ervaring</a></li>
-            <li><a href="cv.html" class="nav">CV</a></li>
-            <li><a href="contact.html" class="nav">Contact</a></li>
-        </ul> 
-    </nav>
-    <h1>Contact</h1>
-    <div class="wrapper">
-        <h2>Contacteer mij op volgende kanalen:</h2>
-        <a href="verbeeckemiel@gmail.com">Email</a>
-        <a href="https://www.linkedin.com/in/emiel-verbeeck-091521226">Linked-In</a>
-    </div>
-    <div class="wrapper">
-    <h2>Laat een bericht achter</h2>
-        <form action="">
-            <label for="naam">Naam:</label>
-            <input type="text" id="naam" placeholder="Naam">
+    <head>
+        <meta name=author content="Emiel Verbeeck">
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="bootstrap/css/bootstrap.css">
+        <link rel="stylesheet" href="/bootstrap/css/bootstrap-utilities.css">
+        <link rel="stylesheet" href="css/global.css">
+        <link rel="icon" href="icon/favicon.ico" type="image/gif" sizes="16x16">
+        <title>Contact</title>
+    </head>
+    <body>
+        <!-- Navbar -->
+        <nav class="navbar navbar-dark navbar-expand-lg">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">Emiel Verbeeck</a>
+                <button class="navbar-toggler" type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#navbar" aria-controls="navbar"
+                    aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
 
-            <label for="email">Email:</label>
-            <input type="email" id="email" placeholder="Email-address">
+                <div class="collapse navbar-collapse justify-content-center"
+                    id="navbar">
+                    <ul class="navbar-nav me-auto mb-2">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="hobby.html">Hobby</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="cv.html">CV</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="contact.html">Contact</a>
+                        </li>
+                    </div>
+                </div>
+            </nav>
+            <div class="jumbotron m-4 p-3 rounded-3">
+                <h1 class="display-4">Contact</h1>
+                <p class="lead">Laat een berichtje achter!</p>
+                <hr class="my-4">
+                <form>
+                    <div class="row">
+                        <div class="form-group col-ms-9 col-md-9 col-lg-4
+                            col-xl-4">
+                            <label for="naam">Naam</label>
+                            <input type="text" class="form-control"
+                                id="naam" placeholder="Doe" required>
+                        </div>
+                        <div class="form-group col-ms-9 col-md-9 col-lg-4
+                            col-xl-4">
+                            <label for="voornaam">Voornaam</label>
+                            <input type="text" class="form-control"
+                                id="email" placeholder="John" required>
+                        </div>
+                    </div>
+                    <div class="form-group col-ms-9 col-md-9 col-lg-6
+                        col-xl-6 mt-2">
+                        <label for="email">Email address</label>
+                        <input type="email" class="form-control"
+                            id="email"
+                            placeholder="Enter email">
+                    </div>
+                    <div class="form-group mt-2">
+                        <label for="multipleSelect">Selecteer service('s)</label>
+                        <select multiple class="form-control"
+                            id="multipleSelect">
+                            <option>C#</option>
+                            <option>Bootstrap</option>
+                            <option>JS</option>
+                            <option>CSS</option>
+                            <option>SQL</option>
+                        </select>
+                    </div>
+                    <div class="form-group mt-2">
+                        <label for="textArea">Bericht:</label>
+                        <textarea class="form-control"
+                            id="textArea" rows="3"></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-danger mt-2">Verstuur</button>
+                </form>
+            </div>
 
-            <label for="onderwerp">Onderwerp:</label>
-            <input type="text" id="onderwerp" placeholder="Onderwerp">
 
-            <label for="bericht">Uw bericht:</label><br>
-            <textarea name="bericht" id="bericht" cols="30" rows="10" placeholder="Bericht"></textarea>
-
-            <input class="submit" type="submit" value="Verstuur">
-
-        </form>
-    </div>
-</body>
-</html>
+            <script src="bootstrap/js/bootstrap.bundle.js"></script>
+        </body>
+    </html>
