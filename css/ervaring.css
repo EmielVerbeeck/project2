@@ -1,0 +1,13 @@
+body{
+    background-image: url(../picture/ali-abdul-rahman-9Itl-03hLao-unsplash.jpg);
+}
+
+h1, .wrapper{
+    display:block;
+    background-color: rgb(89, 182, 253);
+    border-style: solid;
+    border-color:black;
+    border-radius: 1rem;
+    padding: 1rem;
+    margin: 6px;
+}

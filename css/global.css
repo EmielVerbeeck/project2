@@ -1,0 +1,47 @@
+@font-face {
+font-family: "avenir";
+src: url(../font/Avenir\ Book.ttf);
+}
+*{
+    font-family: 'avenir', Arial, sans-serif;
+}
+
+body{
+    width:80%;
+}
+
+ul.nav {
+    list-style-type: none;
+    margin: 2px;
+    padding: 0;
+    overflow: hidden;
+    background-color: coral;
+    border-style: solid;
+    border-color:black;
+    border-radius: 1rem;
+}
+
+li .nav {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* Change the link color to #111 (black) on hover */
+li a:hover {
+  background-color: #111;
+}
+
+a {
+    display: block;
+}
+img{
+    max-width: 100%;
+    height: auto;
+}

@@ -1,0 +1,28 @@
+body{
+    background-image: url(../picture/jose-mizrahi-vxsUdVoAlUA-unsplash.jpg);
+}
+
+
+h1, .wrapper{
+    display:block;
+    background-color: rgb(89, 182, 253);
+    border-style: solid;
+    border-color:black;
+    border-radius: 1rem;
+    padding: 1rem;
+    margin: 6px;
+}
+a{
+    font-size:larger;
+    color:aliceblue;
+}
+input, textarea{
+    display:block;
+    padding:6px;
+    width:20%;
+}
+.submit{
+    padding:6px;
+    margin-top:4px;
+    width:10%;
+}

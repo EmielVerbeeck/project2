@@ -1,0 +1,19 @@
+body{
+    background-image: url(../picture/mourad-saadi-GyDktTa0Nmw-unsplash\(1\).jpg);
+}
+h1, .wrapper{
+    display:block;
+    background-color: rgb(89, 182, 253);
+    border-style: solid;
+    border-color:black;
+    border-radius: 1rem;
+    padding: 1rem;
+    margin: 6px;
+}
+td{
+    border-style: solid;
+    border-color:black;
+    border-radius: 1rem;
+    padding: 1rem;
+    margin: 6px;
+}
