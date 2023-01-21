@@ -1,27 +1,189 @@
 <!DOCTYPE html>
 <html lang="nl">
-<head>
-    <meta name=author content="Emiel Verbeeck">
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/cv.css">
-    <link rel="stylesheet" href="css/global.css">
-    <link rel="icon" href="icon/favicon.ico" type="image/gif" sizes="16x16"> 
-    <title>CV</title>
-</head>
-<body>
-     <nav>
-        <ul class="nav">
-            <li><a href="index.html" class="nav">Home</a></li>
-            <li><a href="hobby.html" class="nav">Hobbies</a></li>
-            <li><a href="ervaring.html" class="nav">Ervaring</a></li>
-            <li><a href="cv.html" class="nav">CV</a></li>
-            <li><a href="contact.html" class="nav">Contact</a></li>
-        </ul> 
-    </nav>
+    <head>
+        <meta name="author" content="Emiel Verbeeck" />
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <!-- Stylesheets -->
+        <link rel="stylesheet" href="bootstrap/css/bootstrap.css" />
+        <link rel="stylesheet" href="css/global.css" />
+        <link rel="stylesheet" href="vendor/carousel.css">
+        <!-- Favicon -->
+        <link rel="icon" href="icon/favicon.ico" type="image/gif" sizes="16x16"
+            />
+        <title>CV</title>
+    </head>
 
-    <img src="picture/cv_emiel_verbeeck.png" alt="Picuture of CV" width="707" height="1000">
-    
-</body>
-</html>
+
+
+    <body>
+        <!-- jQuery -->
+        <script src="vendor/jquery-3.6.3.min.js"></script>
+        <!-- Navbar -->
+
+        <nav class="navbar navbar-dark navbar-expand-lg">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">Emiel Verbeeck</a>
+                <button class="navbar-toggler" type="button"
+                    data-bs-toggle="collapse" data-bs-target="#navbar"
+                    aria-controls="navbar" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse justify-content-center"
+                    id="navbar">
+                    <ul class="navbar-nav me-auto mb-2">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="hobby.html">Hobby</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="cv.html">CV</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contact.html">Contact</a>
+                        </li>
+                    </div>
+                </div>
+            </nav>
+
+            <!-- Hero image -->
+            <div class="row justify-content-center mt-3 mb-3">
+                <img src="/images/1674322930665.jpg" alt="Portrait image author"
+                    class="w-25 rounded">
+            </div>
+            <!-- Cards -->
+            <div class="row justify-content-center mt-1">
+                <div class="col-sm-9 col-md-9 col-lg-3 col-xl-3">
+                    <div class="card">
+                        <img
+                            src="images/kimberly-farmer-lUaaKCUANVI-unsplash.jpg"
+                            class="card-img-top" alt="Books" />
+                        <div class="card-body">
+                            <h5 class="card-title text-bg-danger p-2">Opleiding</h5>
+                            <p class="card-text">
+                                In mijn lagere school carriere heb ik
+                                verschillende richting gedaan, waaronder de
+                                richting IT & Development ten Malle. Dit gaf me
+                                een goede basis voor de richting die ik nu doe
+                                te studeren, namenlijk Programmeren
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-9 col-md-9 col-lg-3 col-xl-3">
+                    <div class="card">
+                        <img
+                            src="images/christina-wocintechchat-com-eF7HN40WbAQ-unsplash.jpg"
+                            class="card-img-top" alt="2 people sitting" />
+                        <div class="card-body">
+                            <h5 class="card-title text-bg-danger p-2">Werkervaring</h5>
+                            <p class="card-text">
+                                Mijn voornaamste werkervaring is een stage in
+                                het gemeentehuis te Vosselaar.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-9 col-md-9 col-lg-3 col-xl-3">
+                    <div class="card">
+                        <img src="images/sigmund-EgwhIBec0Ck-unsplash.jpg"
+                            class="card-img-top" alt="Globe" />
+                        <div class="card-body">
+                            <h5 class="card-title text-bg-danger p-2">Talenkennis</h5>
+                            <p class="card-text">
+                                <ul>
+                                    <li>Nederlands - Moedertaal</li>
+                                    <li>Engels - Zeer goed</li>
+                                    <li>Frans - Conversationeel</li>
+                                </ul>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Carousel -->
+            <h1 class="skills fs-1 fw-bold">SKILLS</h1>
+
+            <div class="container text-center my-3">
+                <div class="row mx-auto my-auto justify-content-center">
+                    <div id="recipeCarousel" class="carousel slide"
+                        data-bs-ride="carousel">
+                        <div class="carousel-inner" role="listbox">
+                            <div class="carousel-item active">
+                                <div class="col-md-3">
+                                    <div class="card">
+                                        <div class="card-img">
+                                            <img src="/images/csharp-logo.png"
+                                                class="img-fluid">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="col-md-3">
+                                    <div class="card">
+                                        <div class="card-img">
+                                            <img
+                                                src="/images/800px-JavaScript-logo.png"
+                                                class="img-fluid">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="col-md-3">
+                                    <div class="card">
+                                        <div class="card-img">
+                                            <img src="/images/CSS3_logo.svg.png"
+                                                class="img-fluid">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="col-md-3">
+                                    <div class="card">
+                                        <div class="card-img">
+                                            <img
+                                                src="/images/sql-database-icon-logo-design-ui-ux-app-orange-inscription-shadow-96841969.jpg"
+                                                class="img-fluid">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="col-md-3">
+                                    <div class="card">
+                                        <div class="card-img">
+                                            <img src="/images/bootstrap.png"
+                                                class="img-fluid">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <a class="carousel-control-prev bg-transparent w-aut"
+                            href="#recipeCarousel" role="button"
+                            data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon"
+                                aria-hidden="true"></span>
+                        </a>
+                        <a class="carousel-control-next bg-transparent w-aut"
+                            href="#recipeCarousel" role="button"
+                            data-bs-slide="next">
+                            <span class="carousel-control-next-icon"
+                                aria-hidden="true"></span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <script src="vendor/carousel.js"></script>
+            <script src="bootstrap/js/bootstrap.bundle.js"></script>
+        </body>
+    </html>
